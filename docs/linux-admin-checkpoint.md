@@ -8,7 +8,7 @@
 ## Permission Notes
 - chmod 755 gives owner read/write/execute and groups and other users read/execute
 - chmod 700 gives owner read, write and execute permissions only 
-- chmod 644m gives owner read/write and groups and others read only
+- chmod 644 gives owner read/write and groups and others read only
 
 ## User Management Notes
 - useradd is used for adding new users 
