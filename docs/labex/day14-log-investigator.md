@@ -8,16 +8,16 @@ The mission is to dive deep into the Project Phoenix server, analyze logs and co
 
 ## Commands Practiced 
 - grep 
-- grep -E file|file
+- grep -E "file|file" file.txt 
 - dmesg
 - diff
 - cat
 - ls
-- >
-- >>
+- `>`
+- `>>`
 
 ## New Commands Learned
-- grep -E "fail|error" combines the command using a pipe and searches for error and fail within the file search path 
+- grep -E "fail|error" file.txt combines the command using a pipe and searches for error and fail within the file search path. The | inside the quotes means OR for the grep pattern.  
 - dmesg shows kernel messages from the linux system 
 - brushed up on using diff to search for differences between files and directories
 
