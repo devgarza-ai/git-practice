@@ -8,7 +8,7 @@ The mission is to dive deep into the Project Phoenix server, analyze logs and co
 
 ## Commands Practiced 
 - grep 
-- grep -E "file|file" file.txt 
+- grep -E "fail|error" file.txt 
 - dmesg
 - diff
 - cat
