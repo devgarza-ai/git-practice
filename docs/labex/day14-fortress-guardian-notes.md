@@ -27,4 +27,4 @@ Using setgid or numeric 2 before the standard three permissions digit to Set gro
 Newer to using setgit or numeric form. Used chmod to set the group ID. 
 
 ## Cloud Engineering Connection 
-Cloud engineers often create files and set up basic permissions gor users on large servers. This helps balance directory security and is very useful in the AWS EC2 instances.
+Cloud engineers often create files and set up basic permissions for users on large servers. This helps balance directory security and is very useful in the AWS EC2 instances.
