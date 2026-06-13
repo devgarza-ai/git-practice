@@ -1,0 +1,7 @@
+INFO service started
+WARNING high memory usage
+ERROR database connection failed
+INFO retrying connection
+ERROR service timeout
+WARNING disk usage above threshold
+INFO service recovered

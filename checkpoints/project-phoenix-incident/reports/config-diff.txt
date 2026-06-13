@@ -1,0 +1,8 @@
+1,3c1,3
+< port=8080
+< debug=false
+< max_connections=100
+---
+> port=8081
+> debug=true
+> max_connections=75

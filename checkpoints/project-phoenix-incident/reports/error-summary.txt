@@ -1,0 +1,14 @@
+Project Phoenix Health Check
+ERROR count:
+logs/app-log.txt:ERROR database connection failed
+logs/app-log.txt:ERROR service timeout
+logs/auth-log.txt:ERROR password authentication failed
+WARNING count:
+logs/app-log.txt:WARNING high memory usage
+logs/app-log.txt:WARNING disk usage above threshold
+logs/auth-log.txt:WARNING multiple failed login attempts
+FAILED login count:
+logs/app-log.txt:ERROR database connection failed
+logs/auth-log.txt:FAILED login attempt for unknown user
+logs/auth-log.txt:ERROR password authentication failed
+logs/auth-log.txt:WARNING multiple failed login attempts

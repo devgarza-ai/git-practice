@@ -1,0 +1,5 @@
+INFO user devgarza logged in
+FAILED login attempt for unknown user
+ERROR password authentication failed
+INFO user admin logged out
+WARNING multiple failed login attempts
