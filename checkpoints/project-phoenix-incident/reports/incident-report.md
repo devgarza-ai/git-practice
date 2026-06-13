@@ -1,16 +1,16 @@
 # Project Phoenix Incident Reports
 
 ## Summary 
-A small app had login issues, service warnings, and possible config drift. Your job is to create a simulated investigation folder, inspect logs, compare config files, write an incident report, archive your work, and publish it to GitHub using your safe branch workflow.
+A small app had login issues, service warnings, and possible config drift. My job is to create a simulated investigation folder, inspect logs, compare config files, write an incident report, archive my work, and publish it to GitHub using a safe branch workflow.
 
 ## Log Findings
 - 3 ERROR lines found 
 - Service timeout and Database Connection Error
-- disk usage waring and high memory usage warning
+- disk usage warning and high memory usage warning
 - a Failed login attempt for an unknown user
 
 # Config Differences
-- 2 differnet port # 8080 and 8081
+- 2 different port #'s 8080 and 8081
 - debug difference true and false
 - two different max connections
 
