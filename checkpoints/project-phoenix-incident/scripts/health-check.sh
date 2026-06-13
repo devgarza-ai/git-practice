@@ -2,9 +2,9 @@
 
 echo "Project Phoenix Health Check"
 echo "ERROR count:"
-grep ERROR logs/*.txt | wc -l 
+grep -E "ERROR" checkpoints/project-phoenix-incident/logs/*.txt | wc -l 
 echo "WARNING count:"
-grep WARNING logs/*.txt  | wc -l
+grep -E "WARNING" checkpoints/project-phoenix-incident/logs/*.txt | wc -l
 echo "FAILED login count:"
-grep -i FAILED logs/*.txt | wc -l
+grep -E "FAILED|failed" checkpoints/project-phoenix-incident/logs/*.txt | wc -l
 

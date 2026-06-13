@@ -15,11 +15,10 @@ A small app had login issues, service warnings, and possible config drift. Your 
 - two different max connections
 
 ## Permission Actions
-- health-check-sh made executable using chmod +x
+- health-check.sh made executable using chmod +x
 - incident-report.md made private to owner with chmod 600
 
 ## Commands Used
-- sudo 
 - cat
 - mkdir 
 - touch
