@@ -1,7 +1,7 @@
 # Day 16 - Process Watchtower
 
 ## Goal
-Learn how to inspect running processes, create a test process, find it, and safelt stop it. 
+Learn how to inspect running processes, create a test process, find it, and safely stop it. 
 
 ## Commands Practiced
 - ps
@@ -10,7 +10,7 @@ Learn how to inspect running processes, create a test process, find it, and safe
 - sleep 300 &
 - ps aux | grep sleep 
 - pgrep  sleep 
-- kill "PID"
+- kill 904
 
 ## Process Findings
 - ps shows PID's 325 and 328.
