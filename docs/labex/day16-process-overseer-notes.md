@@ -17,7 +17,7 @@ Practice Linux process management by inspecting running processes, finding PIDs,
 - pkill
 - nohup
 - &
-- > processor.log
+- `> processor.log`
 - 2>&1
 - cat
 - mv
