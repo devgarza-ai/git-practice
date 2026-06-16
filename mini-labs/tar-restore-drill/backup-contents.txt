@@ -1,0 +1,4 @@
+drwxr-xr-x devgarza/devgarza 0 2026-06-16 14:12 app/
+-rw-r--r-- devgarza/devgarza 13 2026-06-16 14:12 app/users.csv
+-rw-r--r-- devgarza/devgarza 31 2026-06-16 14:12 app/app.conf
+-rw-r--r-- devgarza/devgarza 17 2026-06-16 14:12 app/app.log
