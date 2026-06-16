@@ -13,6 +13,17 @@ Practice basic software/package management on a Debian-based Linux system using 
 - sudo apt remove
 - sudo apt autoremove
 
+## What I Learned
+`sudo apt update` refreshes the package list from the software repositories. It does not upgrade installed packages.
+
+`sudo apt install` installs software packages.
+
+`apt show` displays useful package information such as version, description, dependencies, and maintainer details.
+
+`sudo apt remove` removes a selected package from the system.
+
+`sudo apt autoremove` removes unused packages and dependencies that were installed automatically and are no longer needed.
+
 ## What I Practiced
 - Updated package repositories with `sudo apt update`
 - Installed software using `sudo apt install`
