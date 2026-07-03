@@ -1,0 +1,16 @@
+Cloud Builder - Generaterd Ownership Audit
+
+File Permission Audit:
+devgarza devgarza -rw-r--r-- 644 configs/app.conf
+devgarza devgarza -rw-r--r-- 644 configs/app-prod.conf
+devgarza devgarza -rw-r----- 640 logs/app.log
+devgarza devgarza -rw-r----- 640 logs/auth.log
+devgarza devgarza -rw------- 600 secrets/api.key
+
+Log Findings:
+ERROR count: 2
+FAILED Login count: 
+
+FAILED Login Lines:
+2:FAILED login attempt for root
+3:FAILED login attempt for admin
