@@ -1,0 +1,14 @@
+Enter your name: Enter today's study topic: Enter your energy level (1-5): Invalid input: enter a whole number from 1 through 5.
+Enter your energy level (1-5): Invalid range: enter a number from 1 through 5.
+Enter your energy level (1-5): Enter your hard stop or none: 
+Session Recommendation
+----------------------
+Focused study session recommended.
+
+Input Type Inspection
+---------------------
+student_name: <class 'str'>
+study_topic: <class 'str'>
+energy_text: <class 'str'>
+energy_level: <class 'int'>
+hard_stop: <class 'str'>
