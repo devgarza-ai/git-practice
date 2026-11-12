@@ -1,21 +1,24 @@
 # DevGarza — Cloud Engineering Foundations
 
-This repository documents my hands-on foundation practice in Linux, Bash, Git/GitHub, networking, and beginner Python. It preserves scripts, troubleshooting reports, checkpoint labs, and technical notes that support my current AWS learning.
+This repository documents my hands-on foundation practice in Linux, Bash, Git/GitHub, networking, and beginner Python. It preserves scripts, troubleshooting reports, checkpoint labs, and technical notes that support my AWS and Terraform work.
 
 My goal is to prepare for cloud support, CloudOps, and junior cloud engineering work through practice, verification, and clear documentation.
 
 ## Current progress
 
-Status as of October 2, 2026:
+Status as of November 11, 2026:
 
-| Area | Verified progress or current status |
+| Area | Completed work |
 | --- | --- |
 | AWS coursework | Completed all 13 modules of AWS Cloud Practitioner Essentials on September 22, 2026. |
-| Certification preparation | Preparing for the AWS Certified Cloud Practitioner exam (CLF-C02). Course completion is separate from certification. |
-| Networking | Completed a local networking checkpoint covering interfaces, routes, DNS checks, TCP listeners, HTTP testing, bind addresses, and service cleanup. |
-| AWS hands-on work | Eight documented learning labs are available in [aws-cloud-labs](https://github.com/devgarza-ai/aws-cloud-labs). |
+| Certification | Earned AWS Certified Cloud Practitioner (CLF-C02) on October 17, 2026. |
+| Foundation practice | Completed Linux, Bash, Git, networking, and beginner Python exercises and checkpoints; the original artifacts remain indexed below. |
+| AWS hands-on labs | Completed and documented eight labs in [aws-cloud-labs](https://github.com/devgarza-ai/aws-cloud-labs), with validation scope and cleanup recorded for each. |
+| Project 1: console build | Published [Resilient AWS CloudOps Web Service](https://github.com/devgarza-ai/aws-resilient-cloudops-service), including its two-AZ architecture, operations documentation, and measured recovery exercise. |
+| Terraform practice | Published eight numbered exercises in [terraform-practice](https://github.com/devgarza-ai/terraform-practice): seven runnable configurations and one HCL reference. Deployment evidence varies by exercise and is documented in that repository. |
+| Applied Terraform project | Deployed and verified the temporary [Pestech AWS preview](https://github.com/devgarza-ai/terraform-practice/tree/main/projects/pestech-preview) on November 6, 2026. Its Terraform source, provider lock file, deployment documentation, and desktop/mobile architecture layouts are published. |
 
-Linux, Bash, and Git remain active reinforcement areas while I study AWS and develop my portfolio.
+Linux, Bash, Git, networking, and Python remain active reinforcement areas alongside AWS and Terraform practice.
 
 ## Foundation skills practiced
 
@@ -58,19 +61,40 @@ The earlier Linux, Bash, and Git work remains part of this repository's learning
 | [mini-labs/](mini-labs/) | Focused Bash, backup, and Python exercises. |
 | [docs/](docs/) | Linux, LabEx, and Git learning notes. |
 
-## Related AWS work
+## Related AWS and Terraform work
 
-AWS lab documentation is maintained in [aws-cloud-labs](https://github.com/devgarza-ai/aws-cloud-labs). The eight labs cover:
+### AWS Cloud Labs
 
-- Private S3 object access and presigned sharing.
-- EC2 launch, SSH troubleshooting, encrypted EBS storage, and cleanup.
-- VPC subnetting, public/private routing, and security-group and network-ACL configuration.
-- RDS for MySQL provisioning and readiness checks.
-- IAM group-based S3 permissions and bucket-list authorization.
-- DynamoDB Streams, Lambda execution, CloudWatch logs and alarms, and SNS notifications.
-- CloudTrail investigation of S3 bucket management events.
+The eight completed labs in [aws-cloud-labs](https://github.com/devgarza-ai/aws-cloud-labs) cover:
 
-Each lab documents its validation scope and cleanup state, including distinctions between observed behavior, configuration checks, and design-only components.
+| Lab | Focus |
+| --- | --- |
+| [01: Private S3 object access](https://github.com/devgarza-ai/aws-cloud-labs/tree/main/labs/01-s3-private-access) | Private storage and presigned sharing. |
+| [02: EC2 launch and SSH](https://github.com/devgarza-ai/aws-cloud-labs/tree/main/labs/02-ec2-launch-and-ssh) | Linux provisioning, SSH troubleshooting, and encrypted EBS storage. |
+| [03: VPC network foundations](https://github.com/devgarza-ai/aws-cloud-labs/tree/main/labs/03-vpc-network-foundations) | Subnets, routing, and S3 gateway endpoints. |
+| [04: RDS for MySQL](https://github.com/devgarza-ai/aws-cloud-labs/tree/main/labs/04-rds-mysql-managed-database) | Managed database provisioning and readiness checks. |
+| [05: IAM S3 read-only access](https://github.com/devgarza-ai/aws-cloud-labs/tree/main/labs/05-iam-s3-read-only) | Group-based permissions and access verification. |
+| [06: Serverless event observability](https://github.com/devgarza-ai/aws-cloud-labs/tree/main/labs/06-serverless-event-observability) | DynamoDB Streams, Lambda, CloudWatch logs and alarms, and SNS notifications. |
+| [07: Multi-AZ VPC security architecture](https://github.com/devgarza-ai/aws-cloud-labs/tree/main/labs/07-multi-az-vpc-security) | Public/private routing, tiered security groups, and custom network ACLs. |
+| [08: S3 management-event investigation](https://github.com/devgarza-ai/aws-cloud-labs/tree/main/labs/08-s3-cloudtrail-investigation) | CloudTrail management-event investigation, identity verification, and IAM hardening. |
+
+Each lab records its validation scope and cleanup state. Observed behavior, configuration checks, and design-only components are distinguished explicitly.
+
+### Project 1: Resilient AWS CloudOps Web Service
+
+The published [console-built portfolio project](https://github.com/devgarza-ai/aws-resilient-cloudops-service) connects a two-AZ VPC, private EC2 application servers, an Application Load Balancer, Auto Scaling replacement, Systems Manager administration, CloudWatch monitoring, and CloudTrail auditing.
+
+Its [recovery incident report](https://github.com/devgarza-ai/aws-resilient-cloudops-service/blob/main/docs/incidents/recovery-incident.md) documents measured client impact, including failed requests and the recovered application state. This is a completed console implementation; its Terraform rebuild is planned.
+
+### Terraform practice and Pestech preview
+
+The [Terraform practice repository](https://github.com/devgarza-ai/terraform-practice) contains eight numbered exercises covering VPC foundations, HCL syntax, S3, remote state, EC2/Nginx bootstrapping, static website delivery, AWS data sources, and input variables. The HCL exercise is a reference; the other seven are runnable configurations. Course-based exercises and their validation records are separate from applied deployment evidence.
+
+The [Pestech preview](https://github.com/devgarza-ai/terraform-practice/tree/main/projects/pestech-preview) is an applied Terraform deployment using EC2/Nginx, private S3 release storage, scoped IAM permissions, SSM deployment, and CloudFront viewer HTTPS. Its [verification record](https://github.com/devgarza-ai/terraform-practice/blob/main/projects/pestech-preview/docs/verification.md) documents runtime checks and a final Terraform plan with no pending changes. The [source-publication commit](https://github.com/devgarza-ai/terraform-practice/commit/028c976c786a64966c2658c41fd84d296f09b50a), dated November 7, 2026 (UTC), added the Terraform source and separate desktop/mobile architecture layouts.
+
+Pestech was verified as a temporary preview. Production launch, live authentication, a shared customer database, email delivery, and live AI remain future work.
+
+These repositories document personal learning and portfolio work. Guided practice and AI-assisted tooling or documentation are identified in their project records.
 
 ## Practice environment
 
@@ -80,13 +104,15 @@ My documentation workflow is:
 
 Edit → Check status → Review diff → Stage → Commit → Push → Verify on GitHub
 
-## Next steps
+## Planned next steps
 
-1. Continue CLF-C02 review and hands-on AWS reinforcement. Schedule the exam after scoring at least 80% on two timed full practice exams.
-2. Use Cloud Quest and AWS Educate for further practice, and build my first polished AWS portfolio project after passing CLF-C02.
-3. Begin targeted job applications after Project 1.
-4. Start Terraform after Project 1, continue building and refining portfolio projects, and continue toward AWS Solutions Architect Associate preparation.
+1. Begin targeted applications using the published console portfolio project and supporting labs, focusing on remote U.S. cloud support, CloudOps, AWS/Linux support, junior cloud engineering, MSP, and contract opportunities.
+2. Deepen Terraform practice and prepare for HashiCorp Certified: Terraform Associate (004).
+3. Rebuild Project 1 with Terraform, then verify and document the infrastructure and recovery behavior.
+4. Build Projects 2–3 with Terraform while continuing applications and portfolio improvements.
+5. Prepare for AWS Certified Solutions Architect – Associate (SAA-C03) alongside practical work.
+6. Continue AWS reinforcement through Cloud Quest and AWS Educate, with regular Linux, networking, Git, and Python review.
 
-These are planned steps. Completed work is identified in the progress summary and linked lab records.
+These are planned next steps. Completed work is identified in the progress summary and linked project records.
 
 Learn → Practice → Document → Review → Repeat
