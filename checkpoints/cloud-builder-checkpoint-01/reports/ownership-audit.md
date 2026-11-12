@@ -10,6 +10,8 @@ The sole Purpose of this lab is to get familiar with Linux terminal, change perm
 - 'auth.log'
 - 'api.key'
 
+The tracked `api.key` is a deliberately fake practice file. It contains no usable credential and exists only to demonstrate restrictive file permissions.
+
 ## Permission Decisions
 - '.conf' files have the numeric permissions 644
 - '.log' files have the numeric permissions 640

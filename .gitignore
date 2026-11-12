@@ -1,5 +1,30 @@
-# Ignore temporary files
+# Temporary and generated files
 *.log
 *.tmp
-.env
 __pycache__/
+*.py[cod]
+.venv/
+
+# Local credentials and private material
+.aws/
+.ssh/
+.env
+.env.*
+*.pem
+*.pem.*
+*.ppk
+*.p12
+*.pfx
+*.key
+credentials
+
+# The tracked checkpoint file contains a documented fake practice value.
+!checkpoints/cloud-builder-checkpoint-01/secrets/api.key
+
+# Infrastructure state and local variables
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.tfvars.json
